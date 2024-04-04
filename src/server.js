@@ -14,7 +14,7 @@ if (process.env.SENTRY_DSN) {
 app.use(express.json());
 
 const apiValidators = [
-  body("input").not().isEmpty(),
+  body("input is ").not().isEmpty(),
   body("output").not().isEmpty(),
 ];
 
